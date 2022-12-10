@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ecf0f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor img{
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav .menu li {
+    position: relative;
+}
+
+nav .menu li a {
+    display: block;
+    padding: 25px;
+    background: #F0B429;
+    color: #F47920;
+    border: 1px solid rgba (0,0,0,.4);
+    transition: all 300ns ease;
+}
+
+nav .menu li a:hover{
+    background: transparent;
+    color: #fa3808;
+}
+
+nav .smenu{
+    position: absolute;
+    top: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ns ease;
+}
+
+nav .smenu li {
+    position: relative;
+    display: block;
+    width: 140px;
+}
+
+nav .menu li:hover .smenu{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .ssmenu {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ns ease;
+}
+
+nav .smenu li:hover .ssmenu {
+    top: 0%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.contenedor1 {
+    padding: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#audio {
+   margin: 120px;
+   align-items: center;
+   padding: 60px 430px;   
+}
+
+video {
+    padding-top: 160px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    
+}
+
+.titulo1
+{
+    margin-top: 160px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+p{
+    width: 95%;
+    color: #524c56;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 1%;
+    text-indent: 2%;
+    text-align: justify;
+}
+
+.texto{
+    margin: 40px;
+    text-align: center;
+}
+
+ iframe{
+     padding-top: 70px;
+     width: 90%;
+     height: 80vh;
+     margin: auto;
+    display: block; 
+ }
+ .grid{
+     padding-top: 20px;
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-gap: 15px
+ }
+
+ .grid video{
+     width: 80%;
+    margin: auto;
+ }
+
+ /* footer */
+
+footer {
+    background: #4a78b4;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter h4 {
+    color: #8a3064;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #38558f;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.partFooter a:hover {
+    color: #090c0b;
+}
+
+.partFooter img {
+    width: 70%;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #adb6c7;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color: #fff;
+    background-color: #1FDE82;
+    border-color: #1FDE82;
+}
+
+/* Breakpoints responsive */
+
+@media screen and (max-width:800px) {
+    .titulo {
+        font-size: 45px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .contenido-header>img {
+        width: 400px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+
+ /* Footer */
+
+footer {
+    justify-content: space-evenly;
+}
+
+.partFooter {
+    width: 40%;
+    margin-bottom: 40px;
+}
+}
+
+.partFooter {
+    width: 95%;
+    margin-bottom: 40px;
+}
